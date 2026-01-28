@@ -1,0 +1,190 @@
+<!-- <html>
+<head>
+<title>X Pattern</title>
+</head>
+<body>
+<script>
+let n = 5;
+let op = "";
+
+for(let i=0;i<n;i++){
+  for(let j=0;j<n;j++){
+    if(i==j || i+j==n-1)
+      op += "+ ";
+    else
+      op += "  ";
+  }
+  op += "\n";
+}
+console.log(op);
+</script>
+</body>
+</html> -->
+<!-- <html>
+<head>
+<title>Even Numbers</title>
+</head>
+<body>
+<script>
+let num = 12;
+let op = "";
+
+for(let i=0;i<3;i++){
+  for(let j=0;j<3;j++){
+    op += num + " ";
+    num += 2;
+  }
+  op += "\n";
+}
+console.log(op);
+</script>
+</body>
+</html> -->
+<!-- <html>
+<head>
+<title>Number Triangle</title>
+</head>
+<body>
+<script>
+let num = 1;
+let op = "";
+
+for(let i=1;i<=3;i++){
+  for(let j=1;j<=i;j++){
+    op += num + " ";
+    num++;
+  }
+  op += "\n";
+}
+console.log(op);
+</script>
+</body>
+</html> -->
+<!-- <html>
+<head>
+<title>Alphabet Repeat</title>
+</head>
+<body>
+<script>
+let op = "";
+
+for(let i=0;i<3;i++){
+  let ch = String.fromCharCode(97+i);
+  for(let j=0;j<=i;j++){
+    op += ch;
+  }
+  op += "\n";
+}
+console.log(op);
+</script>
+</body>
+</html> -->
+<!-- <html>
+<head>
+<title>Alphabet Growing</title>
+</head>
+<body>
+<script>
+let op = "";
+
+for(let i=0;i<3;i++){
+  for(let j=0;j<=i;j++){
+    op += String.fromCharCode(97+j);
+  }
+  op += "\n";
+}
+console.log(op);
+</script>
+</body>
+</html>
+<!-- <html>
+<head>
+<title>Continuous Alphabet</title>
+</head>
+<body>
+<script>
+let op = "";
+let ch = 97;
+
+for(let i=1;i<=3;i++){
+  for(let j=1;j<=i;j++){
+    op += String.fromCharCode(ch);
+    ch++;
+  }
+  op += "\n";
+}
+console.log(op);
+</script>
+</body>
+</html> -->
+<!-- <html>
+<head>
+<title>Binary Pattern</title>
+</head>
+<body>
+<script>
+let n = 4;
+let op = "";
+
+for(let i=1;i<=n;i++){
+  for(let j=1;j<=i;j++){
+    if(i%2==0)
+      op += "0 ";
+    else
+      op += "1 ";
+  }
+  op += "\n";
+}
+console.log(op);
+</script>
+</body>
+</html> --> 
+<!-- <html>
+<head>
+<title>Binary Pattern</title>
+</head>
+<body>
+<script>
+let n = 4;
+let op = "";
+
+for(let i=1;i<=n;i++){
+  for(let j=1;j<=i;j++){
+    if(j%2==0)
+      op += "0 ";
+    else
+      op += "1 ";
+  }
+  op += "\n";
+}
+console.log(op);
+</script>
+</body>
+</html>  -->
+<!-- <html>
+<head>
+<title>Alternating Binary Pattern</title>
+</head>
+<body>
+<script>
+let n = 3;
+let op = "";
+
+for(let i = 0; i <= n; i++){
+  let val = i % 2;  
+  
+  for(let j = 0; j <= i; j++){
+    op += val + " ";
+    val = val === 0 ? 1 : 0; 
+  }
+  
+  op += "\n";
+}
+
+console.log(op);
+</script>
+</body>
+</html> -->
+
+
+
