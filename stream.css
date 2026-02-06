@@ -1,0 +1,143 @@
+/* ===== STREAM PAGE (EXACT STYLE) ===== */
+
+/* NAVBAR */
+.bms-navbar {
+  background: #eb4343;
+  padding: 5px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.signin-btn {
+  background: #f84464;
+  border: none;
+  color: white;
+  padding: 6px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.stream-hero {
+  height: 320px;
+  background: url('./cast/conju.jfif') center/cover no-repeat;
+  position: relative;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  color: white;
+}
+
+.hero-overlay h1 {
+  font-size: 38px;
+  margin-bottom: 8px;
+}
+
+/* FILTER BAR */
+.stream-filter {
+  background: white;
+  padding: 15px 40px;
+  display: flex;
+  gap: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.stream-filter span {
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid #f84464;
+  color: #f84464;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.stream-filter .active {
+  background: #f84464;
+  color: white;
+}
+
+/* SECTION */
+.stream-section {
+  padding: 30px 40px;
+}
+
+.stream-section h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+/* GRID */
+.stream-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 25px;
+}
+
+/* CARD */
+.stream-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.stream-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25);
+}
+
+/* POSTER */
+.poster {
+  position: relative;
+}
+
+.poster img {
+  width: 100%;
+  display: block;
+}
+
+/* BADGES */
+.badge {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: white;
+}
+
+.badge.rent { background: #f84464; }
+.badge.buy  { background: #333545; }
+.badge.free { background: #2ecc71; }
+
+/* TEXT */
+.stream-card h3 {
+  padding: 10px;
+  font-size: 15px;
+}
+
+.stream-card p {
+  padding: 0 10px 12px;
+  font-size: 13px;
+  color: #666;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .stream-filter {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .hero-overlay {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Name | BookMyShow</title>
+  <link rel="stylesheet" href="ikkis.css">
+</head>
+<body>
+
+
+<header class="bms-navbar">
+  <div class="nav-left">
+    <h2 class="logo">book<span>my</span>show</h2>
+    <input type="text" placeholder="Search for Movies, Events, Plays...">
+  </div>
+  <button onclick="location.href='signin.html'" class="signin-btn">Sign In</button>
+</header>
+
+
+<section class="movie-hero" style="background-image:url('cast/uttar.avif')">
+  <div class="overlay"></div>
+
+  <div class="movie-hero-content">
+    <img src="D:\Bookmyshow\cast\ikkis.avif" class="movie-poster">
+
+    <div class="movie-info">
+      <h1>Uttar</h1>
+
+      <div class="rating-box">
+        ⭐ 8.6/10
+        <span>20.5K Votes</span>
+      </div>
+
+      <div class="movie-tags">
+        <span>UA</span>
+        
+        <span>Drama</span>
+        <span>Family</span>
+        
+        
+      </div>
+
+      <div class="movie-meta">
+        <p>1h 58m • Marathi • 2D</p>
+        <p>Release Date: 12 Dec 2025</p>
+      </div>
+
+      <button onclick="bookTickets(6, 'Uttar', 'Drama,Family', 'Marathi')" class="book-btn">Book Tickets</button>
+    </div>
+  </div>
+</section>
+
+<section class="about-movie">
+  <h2>About the Movie</h2>
+  <p>
+  A quiet, emotionally charged drama about Uma, a radio presenter who has raised her son Ninad alone. As Ninad pursues his ambitious career, distance grows between them until an unexpected project brings them back into each other's orbit. What begins as a routine task gradually uncovers buried warmth, unspoken care, and the fragile threads that hold a family together.
+  <h2>Cast</h2>
+
+  <div class="cast-row">
+
+    <div class="cast-card">
+      <img src="D:\Bookmyshow\cast\renu.avif" alt="Actor">
+      <h4>Renuka Shahane</h4>
+      <p>as Uma Bhalerao</p>
+    </div>
+
+    <div class="cast-card">
+      <img src="D:\Bookmyshow\cast\abhi.avif" alt="Actor">
+      <h4>Abhinay Berde</h4>
+      <p>as Ninad </p>
+    </div>
+
+    <div class="cast-card">
+      <img src="D:\Bookmyshow\cast\hruta.avif" alt="Actor">
+      <h4>Hruta Durgule</h4>
+      <p>Actor</p>
+    </div>
+
+    <div class="cast-card">
+      <img src="D:\Bookmyshow\cast\nir.avif" alt="Actor">
+      <h4>Nirmiti Sawant </h4>
+      <p>Actor</p>
+    </div>
+   
+  </div>
+</section>
+<section class="cast-section">
+  <h2>Crew</h2>
+
+  <div class="cast-row">
+
+    <div class="cast-card">
+      <img src="D:\Bookmyshow\cast\ksh.avif" alt="Actor">
+      <h4>Kshitih Patwardhan</h4>
+      <p>Director,Writer</p>
+    </div>
+
+    <div class="cast-card">
+      <img src="D:\Bookmyshow\cast\zee.avif" alt="Actor">
+      <h4>Zee Studios</h4>
+      <p>Producer</p>
+    </div>
+
+     <div class="cast-card">
+      <img src="D:\Bookmyshow\cast\umesh.avif" alt="Actor">
+      <h4>Umesh Kr Bansal</h4>
+      <p>Producer</p>
+    </div>
+
+     <div class="cast-card">
+      <img src="D:\Bookmyshow\cast\mayur.avif" alt="Actor">
+      <h4>Mayur Hardas</h4>
+      <p>Producer</p>
+    </div>
+</section>
+<script src="book-tickets.js"></script>
+</body>
+</html>

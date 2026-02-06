@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "title": "Ikkis",
+    "poster": "ikkis.avif",
+    "rating": 8.5,
+    "votes": "20.5K",
+    "genres": ["Action", "Drama", "Historical", "War"],
+    "language": "Hindi",
+    "duration": "2h 27m",
+    "format": ["2D"],
+    "certificate": "UA",
+    "releaseDate": "1 Jan 2026",
+    "detailPage": "ikkis.html"
+  }
+]

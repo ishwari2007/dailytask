@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Seats | BookMyShow</title>
+  <link rel="stylesheet" href="seat-selection.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="bms-navbar">
+  <div class="nav-left">
+    <h2 class="logo" onclick="location.href='main.html'" style="cursor: pointer;">book<span>my</span>show</h2>
+  </div>
+  <button onclick="location.href='signin.html'" class="signin-btn">Sign In</button>
+</header>
+
+<!-- HEADER -->
+<section class="booking-header">
+  <div class="booking-info">
+    <h1 id="movie-title">Movie Title</h1>
+    <p id="theater-name">Theater Name</p>
+    <p id="theater-location">Location</p>
+  </div>
+</section>
+
+<!-- MAIN CONTAINER -->
+<div class="container">
+  
+  <!-- DATE SELECTION -->
+  <div class="date-section">
+    <h3>Select Date</h3>
+    <div class="dates" id="dates-container">
+      <!-- Dates will be dynamically generated -->
+    </div>
+  </div>
+
+  <!-- TIME SELECTION -->
+  <div class="time-section">
+    <h3>Select Showtime</h3>
+    <div class="times" id="times-container">
+      <!-- Times will be dynamically generated -->
+    </div>
+  </div>
+
+  <!-- SEAT SELECTION -->
+  <div class="seats-section">
+    <h3>Select Seats</h3>
+    
+    <!-- SEAT TYPES -->
+    <div class="seat-types">
+      <div class="seat-type" data-type="PLATINUM">
+        <div class="seat-type-info">
+          <span class="seat-type-name">PLATINUM</span>
+          <span class="seat-type-price">₹350</span>
+        </div>
+        <div class="seats" id="platinum-seats">
+          <!-- Seats will be generated here -->
+        </div>
+      </div>
+
+      <div class="seat-type" data-type="GOLD">
+        <div class="seat-type-info">
+          <span class="seat-type-name">GOLD</span>
+          <span class="seat-type-price">₹250</span>
+        </div>
+        <div class="seats" id="gold-seats">
+          <!-- Seats will be generated here -->
+        </div>
+      </div>
+
+      <div class="seat-type" data-type="SILVER">
+        <div class="seat-type-info">
+          <span class="seat-type-name">SILVER</span>
+          <span class="seat-type-price">₹180</span>
+        </div>
+        <div class="seats" id="silver-seats">
+          <!-- Seats will be generated here -->
+        </div>
+      </div>
+    </div>
+
+    <!-- SCREEN -->
+    <div class="screen">
+      <div class="screen-bar"></div>
+      <p>SCREEN THIS WAY</p>
+    </div>
+
+    <!-- LEGEND -->
+    <div class="legend">
+      <div class="legend-item">
+        <div class="box available"></div>
+        <span>Available</span>
+      </div>
+      <div class="legend-item">
+        <div class="box selected"></div>
+        <span>Selected</span>
+      </div>
+      <div class="legend-item">
+        <div class="box booked"></div>
+        <span>Booked</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SELECTED SEATS SUMMARY -->
+  <div class="summary-section" id="summary-section">
+    <div class="selected-seats-info">
+      <h4>Selected Seats</h4>
+      <div id="selected-seats-list">No seats selected</div>
+    </div>
+    <div class="total-amount">
+      <span>Total: ₹<span id="total-price">0</span></span>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <button class="proceed-btn" id="proceed-btn" onclick="proceedToPayment()" disabled>
+      Proceed to Pay
+    </button>
+  </div>
+
+</div>
+
+<!-- Scripts -->
+<script src="movies-data.js"></script>
+<script src="theaters-data.js"></script>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script src="seat-selection.js"></script>
+
+
+</body>
+</html>
+
+

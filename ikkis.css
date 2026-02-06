@@ -1,0 +1,161 @@
+/* ===== MOVIE DETAILS PAGE ===== */
+
+.movie-hero {
+  height: 520px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+}
+/* NAVBAR */
+.bms-navbar {
+  background: #eb4343;
+  padding:
+   12px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.signin-btn {
+  background: #f84464;
+  border: none;
+  color: white;
+  padding: 6px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.movie-hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+}
+
+.movie-hero-content {
+  position: relative;
+  display: flex;
+  gap: 40px;
+  padding: 60px;
+}
+
+/* POSTER */
+.movie-poster {
+  width: 260px;
+  border-radius: 10px;
+}
+
+/* INFO */
+.movie-info h1 {
+  font-size: 36px;
+}
+
+.rating-box {
+  margin: 15px 0;
+  font-size: 18px;
+}
+
+.rating-box span {
+  font-size: 14px;
+  margin-left: 10px;
+  color: #ccc;
+}
+
+/* TAGS */
+.movie-tags span {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  background: #333545;
+  font-size: 12px;
+}
+
+/* META */
+.movie-meta {
+  margin: 15px 0;
+  font-size: 14px;
+  color: #ddd;
+}
+
+/* BOOK BUTTON */
+.book-btn {
+  background: #f84464;
+  border: none;
+  padding: 12px 25px;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* ABOUT */
+.about-movie {
+  padding: 40px 60px;
+  background: white;
+}
+
+.about-movie h2 {
+  margin-bottom: 15px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .movie-hero-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .movie-poster {
+    width: 200px;
+  }
+}
+/* ===== CAST SECTION ===== */
+
+.cast-section {
+  padding: 40px 60px;
+  background: white;
+}
+
+.cast-section h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+/* CAST ROW */
+.cast-row {
+  display: flex;
+  gap: 25px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+/* HIDE SCROLLBAR */
+.cast-row::-webkit-scrollbar {
+  display: none;
+}
+
+/* CAST CARD */
+.cast-card {
+  min-width: 120px;
+  text-align: center;
+}
+
+.cast-card img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.cast-card h4 {
+  font-size: 14px;
+}
+
+.cast-card p {
+  font-size: 12px;
+  color: gray;
+}

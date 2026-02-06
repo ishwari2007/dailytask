@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Name | BookMyShow</title>
+  <link rel="stylesheet" href="tumeri.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="bms-navbar">
+  <div class="nav-left">
+    <h2 class="logo">book<span>my</span>show</h2>
+    <input type="text" placeholder="Search for Movies, Events, Plays...">
+  </div>
+  <button onclick="location.href='signin.html'" class="signin-btn">Sign In</button>
+</header>
+
+<!-- HERO SECTION -->
+<section class="movie-hero" style="background-image:url('cast/tb.jfif')">
+  <div class="overlay"></div>
+
+  <div class="movie-hero-content">
+    <img src="D:\Bookmyshow\cast\tumeri.avif" class="movie-poster">
+
+    <div class="movie-info">
+      <h1>Tu Meri Main Tera Main Tera Tu Meri</h1>
+
+      <div class="rating-box">
+        ⭐ 9.6/10
+        <span>45K Votes</span>
+      </div>
+
+      <div class="movie-tags">
+        <span>UA</span>
+        <span>Comedy</span>
+        <span>Romantic</span>
+      </div>
+
+      <div class="movie-meta">
+        <p>2h 25m • Hindi • 2D, IMAX</p>
+        <p>Release Date: 25 Dec 2025</p>
+      </div>
+
+      <button onclick="bookTickets(5, 'Tu Meri Main Tera Main Tera Tu Meri', 'Comedy,Romantic', 'Hindi')" class="book-btn">Book Tickets</button>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT MOVIE -->
+<section class="about-movie">
+  <h2>About the Movie</h2>
+  <p>
+    Two souls find love in the midst of self-discovery, but family expectations test their bond, leaving them with only hope for a reunion.
+  </p>
+</section>
+<!-- CAST SECTION -->
+<section class="cast-section">
+  <h2>Cast</h2>
+
+  <div class="cast-row">
+
+    <div class="cast-card">
+      <img src="D:\Bookmyshow\cast\kartik.avif" alt="Actor">
+      <h4>Kartik Aaryan</h4>
+      <p>as Ray Mehra</p>
+    </div>
+
+    <div class="cast-card">
+      <img src="D:\Bookmyshow\cast\ananya.avif" alt="Actor">
+      <h4>Ananya Pandey</h4>
+      <p>as Rumi</p>
+    </div>
+
+    <div class="cast-card">
+      <img src="D:\Bookmyshow\cast\jacky.avif" alt="Actor">
+      <h4>Jackie Shroff</h4>
+      <p>as Wardhan Singh</p>
+    </div>
+
+    <div class="cast-card">
+      <img src="D:\Bookmyshow\cast\neena.avif" alt="Actor">
+      <h4>Neena Gupta</h4>
+      <p>as Pinky Mehra</p>
+    </div>
+
+
+  </div>
+</section>
+<section class="cast-section">
+  <h2>Crew</h2>
+
+  <div class="cast-row">
+
+    <div class="cast-card">
+      <img src="D:\Bookmyshow\cast\sameer.avif" alt="Actor">
+      <h4>Sameer Vidwans</h4>
+      <p>Director</p>
+    </div>
+
+    <div class="cast-card">
+      <img src="D:\Bookmyshow\cast\karan.avif" alt="Actor">
+      <h4>Karan Johar</h4>
+      <p>Producer</p>
+    </div>
+
+    <div class="cast-card">
+      <img src="D:\Bookmyshow\cast\apoorva.avif" alt="Actor">
+      <h4>Apoorva Mehta</h4>
+      <p>Producer</p>
+    </div>
+
+    <div class="cast-card">
+      <img src="D:\Bookmyshow\cast\shareen.avif" alt="Actor">
+      <h4>Shareen</h4>
+      <p>Producer</p>
+    </div>
+
+      <div class="cast-card">
+      <img src="D:\Bookmyshow\cast\kishor.avif" alt="Actor">
+      <h4>Kishor Arora</h4>
+      <p>Producer</p>
+</div>
+       <div class="cast-card">
+      <img src="D:\Bookmyshow\cast\bhumika.avif" alt="Actor">
+      <h4>Bhumika Tewari</h4>
+      <p>Producer</p>
+    </div>
+</section>
+<script src="book-tickets.js"></script>
+</body>
+</html>

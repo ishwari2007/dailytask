@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Name | BookMyShow</title>
+  <link rel="stylesheet" href="kranti.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="bms-navbar">
+  <div class="nav-left">
+    <h2 class="logo">book<span>my</span>show</h2>
+    <input type="text" placeholder="Search for Movies, Events, Plays...">
+  </div>
+  <button onclick="location.href='signin.html'" class="signin-btn">Sign In</button>
+</header>
+
+<!-- HERO SECTION -->
+<section class="movie-hero" style="background-image:url('cast/kr.jfif')">
+  <div class="overlay"></div>
+
+  <div class="movie-hero-content">
+    <img src="D:\Bookmyshow\cast\kbanner.avif" class="movie-poster">
+
+    <div class="movie-info">
+      <h1>Krantijyoti Vidyalay Marathi adhyam</h1>
+
+      <div class="rating-box">
+        ⭐ 9.6/10
+        <span>45K Votes</span>
+      </div>
+
+      <div class="movie-tags">
+        <span>UA</span>
+        <span>Drama</span>
+        <span>Motivation</span>
+      </div>
+
+      <div class="movie-meta">
+        <p>2h 29m • Marathi • 2D, IMAX</p>
+        <p>Release Date: 1 Jan 2026</p>
+      </div>
+
+      <button onclick="bookTickets(3, 'Krantijyoti Vidyalay Marathi Madhyam', 'Drama,Comedy', 'Marathi')" class="book-btn">Book Tickets</button>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT MOVIE -->
+<section class="about-movie">
+  <h2>About the Movie</h2>
+  <p>
+    A heartfelt tribute to the Marathi-medium schools celebrating their enduring values, rich culture, vital learnings, and timeless nostalgia.
+  </p>
+</section>
+<!-- CAST SECTION -->
+<section class="cast-section">
+  <h2>Cast</h2>
+
+  <div class="cast-row">
+
+    <div class="cast-card">
+      <img src="D:\Bookmyshow\cast\sachin.avif" alt="Actor">
+      <h4>Sachin Khedekar</h4>
+    </div>
+
+    <div class="cast-card">
+      <img src="D:\Bookmyshow\cast\amey.avif" alt="Actor">
+      <h4>Amey Wagh</h4>
+      
+    </div>
+
+    <div class="cast-card">
+      <img src="D:\Bookmyshow\cast\siddhu.avif" alt="Actor">
+      <h4>Siddharth Chandekar</h4>
+     
+    </div>
+
+    <div class="cast-card">
+      <img src="D:\Bookmyshow\cast\praju.avif" alt="Actor">
+      <h4>Prajakta Koli</h4>
+      
+    </div>
+
+      <div class="cast-card">
+      <img src="D:\Bookmyshow\cast\kshiti.avif" alt="Actor">
+      <h4>Kshitee Jog</h4>
+      
+    </div>
+
+      <div class="cast-card">
+      <img src="D:\Bookmyshow\cast\harish.avif" alt="Actor">
+      <h4>Harish Dudhade</h4>
+      
+    </div>
+
+      <div class="cast-card">
+      <img src="D:\Bookmyshow\cast\kadam.avif" alt="Actor">
+      <h4>Kadambari Kadam</h4>
+    </div>
+
+
+  </div>
+</section>
+<section class="cast-section">
+  <h2>Crew</h2>
+
+  <div class="cast-row">
+
+    <div class="cast-card">
+      <img src="D:\Bookmyshow\cast\emant.avif" alt="Actor">
+      <h4>Hemant Dhome</h4>
+      <p>Director,Writer</p>
+    </div>
+
+    <div class="cast-card">
+      <img src="D:\Bookmyshow\cast\kshiti.avif" alt="Actor">
+      <h4>Kshitee Jog</h4>
+      <p>Producer</p>
+    </div>
+
+</section>
+<script src="book-tickets.js"></script>
+</body>
+</html>

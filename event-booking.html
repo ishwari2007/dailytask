@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Event | BookMyShow</title>
+  <link rel="stylesheet" href="event-booking.css">
+</head>
+<body>
+
+<header class="bms-navbar">
+  <div class="nav-left">
+    <h2 class="logo" onclick="location.href='main.html'" style="cursor: pointer;">book<span>my</span>show</h2>
+  </div>
+  <button onclick="location.href='signin.html'" class="signin-btn">Sign In</button>
+</header>
+
+<section class="event-header">
+  <div class="event-header-content">
+    <h1 id="event-title">Loading...</h1>
+    <p id="event-subtitle"></p>
+  </div>
+</section>
+
+<div class="booking-container">
+  <div class="event-details-section">
+    <div class="event-image-container">
+      <img id="event-image" src="" alt="Event">
+    </div>
+    <div class="event-info-container">
+      <div class="info-item">
+        <strong>Date:</strong> <span id="event-date"></span>
+      </div>
+      <div class="info-item">
+        <strong>Time:</strong> <span id="event-time"></span>
+      </div>
+      <div class="info-item">
+        <strong>Venue:</strong> <span id="event-venue"></span>
+      </div>
+      <div class="info-item">
+        <strong>City:</strong> <span id="event-city"></span>
+      </div>
+      <div class="info-item">
+        <strong>Duration:</strong> <span id="event-duration"></span>
+      </div>
+      <div class="info-item">
+        <strong>Price:</strong> <span id="event-price" class="price-highlight"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="ticket-selection">
+    <h2>Select Tickets</h2>
+    <div class="ticket-types" id="ticket-types">
+      <!-- Tickets will be dynamically generated -->
+    </div>
+    <div class="total-section">
+      <div class="total-info">
+        <span>Total: ₹<span id="total-amount">0</span></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="booking-actions">
+    <button class="book-btn" id="proceed-btn" onclick="proceedToPayment()" disabled>Proceed to Book</button>
+  </div>
+</div>
+
+<script src="all-content-data.js"></script>
+<script src="event-booking.js"></script>
+
+</body>
+</html>
+
+
