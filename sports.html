@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sports | BookMyShow Clone</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #f5f5f5;
+        }
+
+        /* HEADER */
+        .top-bar {
+            background: #333;
+            color: white;
+            padding: 12px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #e53935;
+        }
+
+        .search {
+            width: 40%;
+            padding: 8px 12px;
+            border-radius: 4px;
+            border: none;
+        }
+
+        .signin {
+            background: #e53935;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        /* NAVBAR */
+        .nav {
+            background: white;
+            padding: 10px 40px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .nav a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .nav a.active {
+            color: #e53935;
+        }
+
+        /* PAGE TITLE */
+        .title {
+            padding: 20px 40px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* FILTERS */
+        .filters {
+            display: flex;
+            gap: 15px;
+            padding: 0 40px 20px;
+            flex-wrap: wrap;
+        }
+
+        .filter {
+            padding: 8px 15px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            background: white;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .filter.active {
+            background: #e53935;
+            color: white;
+            border-color: #e53935;
+        }
+
+        /* SPORTS GRID */
+        .sports {
+            padding: 0 40px 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .sport-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            cursor: pointer;
+        }
+
+        .sport-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .sport-info {
+            padding: 12px;
+        }
+
+        .sport-info h3 {
+            font-size: 16px;
+            margin-bottom: 6px;
+        }
+
+        .sport-info p {
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 4px;
+        }
+
+        .price {
+            color: #e53935;
+            font-weight: bold;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <div class="top-bar">
+        <div class="logo">book<span>my</span>show</div>
+        <input type="text" class="search" placeholder="Search for Movies, Events, Plays...">
+        <button class="signin">Sign In</button>
+    </div>
+
+    <!-- NAVBAR -->
+    <div class="nav">
+        <a href="main.html">Movies</a>
+        <a href="stream.html">Stream</a>
+        <a href="events.html">Events</a>
+        <a href="plays.html">Plays</a>
+        <a href="sports.html" class="active">Sports</a>
+        <a href="activity.html">Activities</a>
+    </div>
+
+    <!-- TITLE -->
+    <div class="title">Sports Events Near You</div>
+
+    <!-- FILTERS -->
+    <div class="filters">
+        <div class="filter active">All</div>
+        <div class="filter">Cricket</div>
+        <div class="filter">Football</div>
+        <div class="filter">Badminton</div>
+        <div class="filter">Marathon</div>
+        <div class="filter">Esports</div>
+        <div class="filter">Indoor</div>
+    </div>
+
+    <!-- SPORTS LIST -->
+    <div class="sports">
+
+        <div class="sport-card">
+            <img src="./cast/india.jfif" alt="">
+            <div class="sport-info">
+                <h3>India vs New Zealand</h3>
+                <p>Cricket • ODI</p>
+                <p>Sun, 11 Jan</p>
+                <p>Mumbai</p>
+                <p class="price">₹1,499 onwards</p>
+            </div>
+        </div>
+
+        <div class="sport-card">
+            <img src="./cast/goa.jfif" alt="">
+            <div class="sport-info">
+                <h3>ISL: Mumbai City FC vs FC Goa</h3>
+                <p>Football</p>
+                <p>Wed, 18 Jan</p>
+                <p>Mumbai</p>
+                <p class="price">₹799 onwards</p>
+            </div>
+        </div>
+
+        <div class="sport-card">
+            <img src="./cast/bad.jfif" alt="">
+            <div class="sport-info">
+                <h3>Badminton Open</h3>
+                <p>Badminton</p>
+                <p>21–22 Jan</p>
+                <p>Hyderabad</p>
+                <p class="price">₹499 onwards</p>
+            </div>
+        </div>
+
+        <div class="sport-card">
+            <img src="./cast/marathon.jfif" alt="">
+            <div class="sport-info">
+                <h3>City Marathon 2025</h3>
+                <p>Running Event</p>
+                <p>29 Jan</p>
+                <p>Pune</p>
+                <p class="price">₹999 onwards</p>
+            </div>
+        </div>
+
+        <div class="sport-card">
+            <img src="./cast/esport.jfif" alt="">
+            <div class="sport-info">
+                <h3>Esports Championship</h3>
+                <p>Gaming</p>
+                <p>5 Jan</p>
+                <p>Online</p>
+                <p class="price">₹299 onwards</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

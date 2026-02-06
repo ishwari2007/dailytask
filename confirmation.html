@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Booking Confirmed</title>
+<style>
+body {
+  font-family: Arial;
+  background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 420px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+h2 {
+  text-align: center;
+  color: #4caf50;
+}
+.info {
+  margin: 10px 0;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+  <h2>🎉 Booking Confirmed</h2>
+  <div id="details"></div>
+</div>
+
+<script>
+  const booking = JSON.parse(sessionStorage.getItem("bmsBooking"));
+  const details = document.getElementById("details");
+
+  if (!booking) {
+    details.innerHTML = "No booking found.";
+  } else {
+    details.innerHTML = `
+      <div class="info"><strong>Movie:</strong> ${booking.movie}</div>
+      <div class="info"><strong>Theater:</strong> ${booking.theater}</div>
+      <div class="info"><strong>Date:</strong> ${booking.date}</div>
+      <div class="info"><strong>Time:</strong> ${booking.time}</div>
+      <div class="info"><strong>Seats:</strong> ${booking.seats.map(s => s.id).join(", ")}</div>
+      <div class="info"><strong>Total Paid:</strong> ₹${booking.totalAmount}</div>
+      <div class="info"><strong>Payment ID:</strong> ${booking.paymentId}</div>
+      <div class="info"><strong>Status:</strong> ${booking.status} ✅</div>
+    `;
+  }
+</script>
+
+</body>
+</html>

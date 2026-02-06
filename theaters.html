@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Theater | BookMyShow</title>
+  <link rel="stylesheet" href="theaters.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="bms-navbar">
+  <div class="nav-left">
+    <h2 class="logo" onclick="location.href='main.html'" style="cursor: pointer;">book<span>my</span>show</h2>
+  </div>
+  <button onclick="location.href='signin.html'" class="signin-btn">Sign In</button>
+</header>
+
+<!-- MOVIE HEADER -->
+<section class="movie-header" id="movie-header">
+  <div class="movie-header-content">
+    <h1 id="movie-title">Loading...</h1>
+    <p id="movie-subtitle"></p>
+  </div>
+</section>
+
+<!-- MAIN CONTENT -->
+<section class="theaters-section">
+  
+  <!-- LOCATION & SEARCH -->
+  <div class="location-bar">
+    <div class="location-selector">
+      <span class="location-icon">📍</span>
+      <select id="location-select" class="location-dropdown">
+        <option value="pune">Pune</option>
+        <option value="mumbai">Mumbai</option>
+        <option value="delhi">Delhi</option>
+        <option value="bangalore">Bangalore</option>
+      </select>
+    </div>
+    <input type="text" id="search-theater" class="search-input" placeholder="Search theaters by name or location...">
+  </div>
+
+  <!-- FILTERS -->
+  <div class="filter-bar">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="nearby">Nearby</button>
+    <button class="filter-btn" data-filter="recommended">Recommended</button>
+    <button class="filter-btn" data-filter="imax">IMAX</button>
+  </div>
+
+  <!-- THEATERS LIST -->
+  <div class="theaters-container" id="theaters-container">
+    <!-- Theaters will be dynamically rendered here -->
+  </div>
+
+  <!-- NO RESULTS -->
+  <div class="no-results" id="no-results" style="display: none;">
+    <p>No theaters found. Try adjusting your search or filters.</p>
+  </div>
+
+</section>
+
+<!-- Scripts -->
+<script src="movies-data.js"></script>
+<script src="theaters-data.js"></script>
+<script src="theaters.js"></script>
+
+</body>
+</html>
+

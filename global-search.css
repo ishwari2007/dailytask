@@ -1,0 +1,160 @@
+/* Global Search Results Styling */
+.search-results-container {
+  display: none;
+  position: absolute;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  max-height: 600px;
+  overflow-y: auto;
+  z-index: 1000;
+  margin-top: 5px;
+}
+
+.search-results {
+  padding: 10px;
+}
+
+.search-section {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.search-section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.search-section-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #666;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+.search-result-item {
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-bottom: 5px;
+}
+
+.search-result-item:hover {
+  background: #f5f5f5;
+}
+
+.search-result-item a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.search-result-image {
+  width: 60px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.search-result-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.search-result-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.search-result-subtitle {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.search-result-meta {
+  font-size: 11px;
+  color: #999;
+}
+
+.search-more {
+  text-align: center;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.search-more a {
+  color: #f84464;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.search-more a:hover {
+  text-decoration: underline;
+}
+
+.search-no-results {
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.search-no-results p {
+  margin-bottom: 8px;
+  color: #666;
+}
+
+.search-no-results strong {
+  color: #333;
+}
+
+.search-suggestions {
+  font-size: 12px;
+  color: #999;
+}
+
+/* Make search input container relative for absolute positioning */
+.nav-left,
+.top-bar,
+.bms-navbar .nav-left {
+  position: relative;
+}
+
+/* Scrollbar styling */
+.search-results-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.search-results-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.search-results-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+.search-results-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+

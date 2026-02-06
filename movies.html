@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movies | BookMyShow Clone</title>
+  <link rel="stylesheet" href="movies.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="bms-navbar">
+  <div class="nav-left">
+    <h2 class="logo" onclick="location.href='main.html'" style="cursor: pointer;">book<span>my</span>show</h2>
+    <input type="text" placeholder="Search for Movies, Events, Plays..." id="search-input">
+  </div>
+  <button onclick="location.href='signin.html'" class="signin-btn">Sign In</button>
+</header>
+
+<!-- PAGE TITLE -->
+<section class="movies-title">
+  <div class="title-section">
+    <h2>Movies in Your City</h2>
+    <div class="title-controls">
+      <span id="results-count" class="results-count">8 movies found</span>
+      <select id="sort-movies" class="sort-select">
+        <option value="">Sort By</option>
+        <option value="rating-high">Rating: High to Low</option>
+        <option value="rating-low">Rating: Low to High</option>
+        <option value="title-asc">Title: A to Z</option>
+        <option value="title-desc">Title: Z to A</option>
+        <option value="release-new">Release: Newest First</option>
+        <option value="release-old">Release: Oldest First</option>
+      </select>
+    </div>
+  </div>
+</section>
+
+<!-- MAIN CONTENT -->
+<section class="movies-container">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h3>Filters</h3>
+      <button class="clear-filters" onclick="clearFilters()">Clear All</button>
+    </div>
+
+    <div class="filter-group">
+      <h4>Languages</h4>
+      <div class="filter-buttons">
+        <button>Hindi</button>
+        <button>English</button>
+        <button>Marathi</button>
+      </div>
+    </div>
+
+    <div class="filter-group">
+      <h4>Genres</h4>
+      <div class="filter-buttons">
+        <button>Action</button>
+        <button>Drama</button>
+        <button>Comedy</button>
+        <button>Romantic</button>
+        <button>Thriller</button>
+        <button>Adventure</button>
+        <button>Animation</button>
+        <button>Biography</button>
+        <button>Family</button>
+        <button>Historical</button>
+        <button>War</button>
+        <button>Sci-Fi</button>
+      </div>
+    </div>
+
+    <div class="filter-group">
+      <h4>Formats</h4>
+      <div class="filter-buttons">
+        <button>2D</button>
+        <button>3D</button>
+        <button>IMAX</button>
+        <button>4DX 3D</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MOVIES GRID -->
+  <main class="movies-grid" id="movies-grid">
+    <!-- Movies will be dynamically rendered here -->
+  </main>
+</section>
+
+<!-- Scripts -->
+<script src="movies-data.js"></script>
+<script src="movies.js"></script>
+
+</body>
+</html>
